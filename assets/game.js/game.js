@@ -19,9 +19,9 @@ var num3=Math.floor (Math.random()*11+1)
 var num4=Math.floor (Math.random()*11+1)
 //
 //Declaring variables for the scores
-var UserTotal=0;
-var wins= 0
-var losses=0
+var userTotal=0;
+var wins= 0;
+var losses=0;
 // 
 //Will append the results of the wins and losses on the html doc 
 $('#numberWins').text(wins)
@@ -36,7 +36,7 @@ num1=Math.floor (Math.random()*11+1)
 num2=Math.floor (Math.random()*11+1)
 num3=Math.floor (Math.random()*11+1)
 num4=Math.floor (Math.random()*11+1)
-userTotal=0;
+
 $('#finalTotal').text(userTotal);
 }
 //
@@ -87,7 +87,6 @@ if (userTotal==Random){
 else if (userTotal> Random){
 	loser()
 }
-});
 
 $('#three').on('click' ,function(){
 	userTotal=userTotal+num3;
@@ -96,7 +95,7 @@ $('#three').on('click' ,function(){
 
 	$('#finalTotal').text (userTotal);
 
-})
+
 
 if (userTotal==Random){
 	winner()
@@ -104,6 +103,7 @@ if (userTotal==Random){
 else if (userTotal> Random){
 	loser()
 }
+
 })
 
 $('four').on('click' ,function(){
@@ -113,7 +113,7 @@ $('four').on('click' ,function(){
 	
 	$('#finalTotal').text (userTotal);
 
-});
+
 
 
 if (userTotal==Random){
@@ -121,5 +121,6 @@ if (userTotal==Random){
 }
 else if (userTotal> Random){
 	loser()
-}
-})
+};
+
+});
