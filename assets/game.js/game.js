@@ -1,12 +1,12 @@
 
 
-$(document).ready(function)() {
+$(document).ready(function() {
 
 //select a random number to be dsiplayed at the start of the game
 // This number should be between  19-120
 //
 var Random=Math.floor(Math.random()* 101+19)	
-}
+
 // Will want to append the random number to the randomNumber id in the html  doc
 //
 $('#randomNumber').text(Random);
@@ -59,10 +59,10 @@ reset()
 $('#one').on('click' ,function(){
 	userTotal=userTotal+num1;
 
-	console.log(New userTotal= " + userTotal")
+	console.log(NewuserTotal= " + userTotal")
 	$('#finalTotal').text (userTotal);
 
-}
+});
 
 if (userTotal==Random){
 	winner()
@@ -75,11 +75,11 @@ else if (userTotal> Random){
 $('#two').on('click' ,function(){
 	userTotal=userTotal+num2;
 
-	console.log(New userTotal= " + userTotal")
+	console.log(NewuserTotal= " + userTotal")
 
 	$('#finalTotal').text (userTotal);
 
-}
+});
 
 if (userTotal==Random){
 	winner()
@@ -87,16 +87,16 @@ if (userTotal==Random){
 else if (userTotal> Random){
 	loser()
 }
-})
+});
 
 $('#three').on('click' ,function(){
 	userTotal=userTotal+num3;
 
-	console.log(New userTotal= " + userTotal")
+	console.log(NewuserTotal= " + userTotal")
 
 	$('#finalTotal').text (userTotal);
 
-}
+})
 
 if (userTotal==Random){
 	winner()
@@ -109,11 +109,11 @@ else if (userTotal> Random){
 $('four').on('click' ,function(){
 	userTotal=userTotal+num4;
 
-	console.log(New userTotal= " + userTotal")
+	console.log(NeuserTotal= " + userTotal")
 	
 	$('#finalTotal').text (userTotal);
 
-}
+});
 
 
 if (userTotal==Random){
